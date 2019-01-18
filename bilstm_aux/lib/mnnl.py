@@ -5,8 +5,9 @@ my NN library
 import _dynet as dynet
 import numpy as np
 import array
-from bilstm_aux.constants import START_TAG, END_TAG
+from bilstm_aux.lib.constants import START_TAG, END_TAG
 from scipy import linalg
+
 
 def init_dynet(seed):
     """initialize DyNet"""
