@@ -16,10 +16,10 @@ import _dynet as dynet
 import codecs
 
 from collections import Counter, defaultdict
-from lib.mnnl import FFSequencePredictor, Layer, BiRNNSequencePredictor, CRFSequencePredictor, init_dynet, is_in_dict
-from lib.mio import load_embeddings_file, SeqData, load_dict
-from lib.constants import UNK, MAX_SEED, WORD_START, WORD_END, START_TAG, END_TAG
-from lib.mmappers import TRAINER_MAP, ACTIVATION_MAP, INITIALIZER_MAP, BUILDERS
+from bilstm_aux.lib.mnnl import FFSequencePredictor, Layer, BiRNNSequencePredictor, CRFSequencePredictor, init_dynet, is_in_dict
+from bilstm_aux.lib.mio import load_embeddings_file, SeqData, load_dict
+from bilstm_aux.lib.constants import UNK, MAX_SEED, WORD_START, WORD_END, START_TAG, END_TAG
+from bilstm_aux.lib.mmappers import TRAINER_MAP, ACTIVATION_MAP, INITIALIZER_MAP, BUILDERS
 
 def main():
     parser = argparse.ArgumentParser(description="""Run the bi-LSTM tagger""", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
