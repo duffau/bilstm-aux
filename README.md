@@ -9,12 +9,11 @@ If you use this tagger please cite our papers:
 * https://aclanthology.coli.uni-saarland.de/papers/D18-1061/d18-1061
 * http://arxiv.org/abs/1604.05529
 
-### Requirements
-
-* python3 
-* [DyNet 2.0](https://github.com/clab/dynet)
-
 ## Installation
+
+```bash
+pip install git+https://github.com/duffau/bilstm-aux.git --process-dependency-links
+```
 
 Download and install dynet in a directory of your choice DYNETDIR: 
 
