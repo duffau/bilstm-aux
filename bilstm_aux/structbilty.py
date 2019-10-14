@@ -261,7 +261,8 @@ def load(model_path, local_dictionary=None):
     load a model from file; specify the .model file, it assumes the *pickle file in the same location
     """
     print("load model.. ", model_path)
-    myparams = dill.load(open(model_path+".params.pickle", "rb"))
+    with open(model_path + ".params.pickle", "rb") as params_file:
+        myparams = dill.load(params_file)
     if not "mimickx_model_path" in myparams:
         myparams["mimickx_model_path"] = None
     if local_dictionary:
