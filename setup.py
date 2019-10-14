@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name="bilstm_aux",
-    version="1.0.0",
+    version="1.0.1",
     description="Bidirectional Long-Short Term Memory sequence tagger.",
     url="https://github.com/bplank/bilstm-aux",
     packages=['bilstm_aux', 'bilstm_aux.lib'],
